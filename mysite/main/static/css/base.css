@@ -1,0 +1,424 @@
+/* BASE */
+
+
+/* Body */
+
+/* Scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #ec9333;
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background:#e4381C; 
+  }
+  
+  html,
+  body {
+      height: 100%;
+      font-family: "Nunito Sans", sans-serif;
+      -webkit-font-smoothing: antialiased;
+       background-color: black;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+      margin: 0;
+      color: #ffffff;
+      font-weight: 400;
+      font-family: "Oswald", sans-serif;
+  }
+  
+  h1 {
+      font-size: 70px;
+  }
+  
+  h2 {
+      font-size: 36px;
+  }
+  
+  h3 {
+      font-size: 30px;
+  }
+  
+  h4 {
+      font-size: 24px;
+  }
+  
+  h5 {
+      font-size: 18px;
+  }
+  
+  h6 {
+      font-size: 16px;
+  }
+  
+  p {
+      font-size: 16px;
+      font-family: "Nunito Sans", sans-serif;
+      color: #8f8fa8;
+      font-weight: 400;
+      line-height: 24px;
+      margin: 0 0 15px 0;
+  }
+  .red{
+      color:red;
+      font-weight: 700;}
+  
+  img {
+      max-width: 100%;
+  }
+  
+  input:focus,
+  select:focus,
+  button:focus,
+  textarea:focus{
+   outline: none;
+  }
+  
+  
+  /* Form's input box colors */
+  
+  .form-control{
+      width: 100%;
+      height: 46px;
+     
+      background: #2d2d2d;
+     
+      padding-left: 20px;
+      margin-bottom: 30px;
+      font-size: 16px;
+      color: #a6a6a6;
+    
+      -o-transition: 0.3s;
+      transition: 0.3s;
+      border:2px solid #e4381C;
+  }
+  
+  select{ 
+      border: 2px solid #e4381C;
+      }
+  
+  .border {
+      border: 2px solid #e4381C!important;
+  }
+  option{ 
+      background: #2d2d2d;
+      color: #eee8e8;}
+  
+  select:focus,
+  .form-control:focus {
+      color: #eee8e8;
+      background: #2d2d2d;
+      border: 2px solid #e16521;
+      outline: 0;
+      
+  }
+  
+  
+  a:focus {
+      text-decoration: none;
+      outline: none;
+      color: #fff;
+  }
+  
+  ul,
+  ol {
+      padding: 0;
+      margin: 0;
+  }
+  
+  
+  
+  /* BUTTONS */
+  
+  /*modal closing x*/
+  
+  .close {
+      color: #ffffff;
+      opacity: 1;}
+  
+  .btn, .btn-primary {
+      display: inline-block;
+      font-size: 14px;
+      font-family: "Oswald", sans-serif;
+      font-weight: 600;
+      padding: 0 12px;
+      color:white;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-align: center;
+      width: auto;
+      height: 46px;
+      border-left: 2px solid #e16521;
+      border-right: 2px solid #e4381C;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      background-position: 0 0, 0 100%;
+      background-repeat: no-repeat;
+      background-size: 100% 2px;
+      background-image: -webkit-gradient(linear, left top, right top, color-stop(100%, #e4381C), to(#e16521)), -webkit-gradient(linear, left top, right top, from(#e4381C), color-stop(0%, #e16521));
+      background-image: -o-linear-gradient(left, #e4381C 100%, #e16521 100%), -o-linear-gradient(left, #e4381C 0%, #e16521 0%);
+      background-image: linear-gradient(to right, #e4381C 100%, #e16521 100%), linear-gradient(to right, #e4381C 0%, #e16521 0%);
+      -webkit-transition-duration: 1000ms;
+      -o-transition-duration: 1000ms;
+      transition-duration: 1000ms;
+      line-height: 45px;
+      position: relative;
+      z-index: 1;
+      border-radius: 4px;
+  }
+  
+  .btn:hover, .btn-primary{
+      background-color:#e4381C;
+      color: #ffffff;}
+  
+      
+  /* Icons */
+  
+  .fa-sm{
+      color:#e16521;}
+  .fa-sm:hover{
+      color:#ffffff;}
+  .icon{
+      color:yellow;
+      }
+  
+  /*  Navbar  */
+  
+  .navbar-expand-lg {
+      margin: 0px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      z-index: 99;
+      padding-left: 60px;
+      padding-right: 60px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      background: #151515;
+  
+  }
+  
+  .logo-font, i{
+      color: whitesmoke;
+      font-size: 30px;
+      
+  }
+  .logo-font {
+      float: left;
+  }
+  
+  .main-logo-link a {
+      display: inline-block;
+  }
+  
+  .mobile-nav {
+      text-align: center;
+      
+  }
+  
+  .collapse {
+      display: inline-block;
+      padding-top: 20px;
+  }
+  
+  .collapse ul li {
+      display: inline-block;
+      list-style: none;
+      position: relative;
+  }
+  
+    
+  #navbarSupportedContent ul li:last-child {
+      margin-right: 0;
+  }
+  
+  #navbarSupportedContent ul li.active a {
+      color: #e4381C;
+  }
+  
+  #navbarSupportedContent > ul > li.nav-item.active > a:after {
+      opacity: 1;
+  }
+  
+  .nav-item .nav-link, #user-options p, .basket p{
+      color: #ffffff;
+      font-size: 16px;
+      text-transform: uppercase;
+      font-weight: 500;
+      line-height: 28px;
+      display: block;
+      font-family: "Oswald", sans-serif;
+      -webkit-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
+  }
+  
+   .nav-item :after,  #user-options p :after, .basket p  :after, .nav-item:focus{
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 100%;
+      padding-right: 50px;
+      height: 2px;
+      background: #e4381C;
+      content: "";
+      opacity: 0;
+      -webkit-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
+  }
+  
+  #navbarSupportedContent ul li:hover .dropdown {
+      opacity: 1;
+      visibility: visible;
+      top: 40px;
+  }
+  
+  #navbarSupportedContent ul li:hover>a {
+      color: #e4381C;
+  }
+  
+  #navbarSupportedContent ul li:hover>a:after {
+      opacity: 1;
+  }
+  /* Dropdow */
+  
+  .dropdown-menu,
+  .dropdown-item{
+      color: #ffffff;
+      background-color:#e16521;}
+  
+  .dropdown-item:hover{
+      color: #e16521;
+      background-color:#ffffff;}
+  
+  
+  /* Hr Horizontal line*/
+  
+  hr{
+      background-color:#e16521;
+      margin: 20px;}
+  
+  /* Allauth */
+  
+  .logout{
+      margin-top:50%;
+  }
+  
+  .login{margin-top:30%;}
+  
+  
+  label{color: #ffffff;}
+  
+  /* ------------------------------- bootstrap toasts */
+  
+  .message-container {
+      position: fixed;
+      top: 72px;
+      right: 15px;
+      z-index: 99999999999;
+      background-color:#000;
+      border:1px solid #ffffff;
+  
+  }
+  
+  .toast-capper {
+      height: 10px;
+  }
+  .toast-header, .toast-body{
+      background-color:#000;
+      color: #ffffff;}
+  
+  .bag-notification-wrapper{color:#ffffff;}
+  
+  body > div.message-container > div > div.toast-body > div:nth-child(4) > div > p{
+      color:#ffffff;}
+  
+  /* Footer */
+  
+  .footer{
+   
+      background-image: linear-gradient(to right, rgb(102, 39, 3) , #e4381C);
+  } 
+  
+  
+  @media  (max-width: 320px) {
+      .logo-font{
+          font-size:1.5rem;}
+      .footer{ background-image: linear-gradient( rgb(102, 39, 3) , #e4381C);
+  } }
+  
+  @media  (max-width: 450px) {
+      .footer{ background-image: linear-gradient( rgb(102, 39, 3) , #e4381C);
+  } }
+  
+  @media (max-width: 281px){
+  .white-h1 {
+      font-size: 1rem;
+     
+  }
+  .logo-font{
+          font-size:1rem;}}
+  @media (max-height: 820px)and (max-width: 600px) {
+      .white-h1{
+          font-size: 1.5rem;}
+      .white-h3{
+          font-size: 1.5rem;}
+          
+      .top-hr{margin-top: 50px;}
+  }
+  
+  @media (max-width: 350px){
+  .white-h1 {
+      font-size: 1.5rem;}
+      }
+  
+  @media (max-width: 600px) {
+      .white-h1{
+          font-size: 1.5rem;}
+      .top-hr{margin-top: 50px;}
+      }
+  
+  @media (max-width: 798px){
+  .white-h1 {
+      font-size: 1.5rem;}
+      }
+  @media (max-width: 350px){
+  .white-h1 {
+      font-size: 1.5rem;}
+      }
+      
+  @media (max-width: 600px){
+  .white-h1 {
+      font-size: 1.5rem;
+  }}
+  
+   @media (max-width: 650px){
+   .logo-font{font-size: 1rem;}
+   .white-h1 {
+      font-size: 1.5rem;
+  }}
